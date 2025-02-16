@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cackle Later</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Cackle Later!</h1>
+  <p>(at the sight of my non-existent UI design)</p>
+
+  <div class="calculator">
+    <input id="display" readonly>
+    <div class="buttons">
+      <button onclick="clearDisplay()">AC</button>
+      <button onclick="switchSign()">+ / -</button>
+      <button onclick="cackleLater()" class="operator">%</button>
+      <button onclick="cackleLater()" class="operator">/</button>
+      <button onclick="populateDisplay('7')">7</button>
+      <button onclick="populateDisplay('8')">8</button>
+      <button onclick="populateDisplay('9')">9</button>
+      <button onclick="cackleLater()" class="operator">*</button>
+      <button onclick="populateDisplay('4')">4</button>
+      <button onclick="populateDisplay('5')">5</button>
+      <button onclick="populateDisplay('6')">6</button>
+      <button onclick="cackleLater()" class="operator">-</button>
+      <button onclick="populateDisplay('1')">1</button>
+      <button onclick="populateDisplay('2')">2</button>
+      <button onclick="populateDisplay('3')">3</button>
+      <button onclick="cackleLater()" class="operator">+</button>
+      <button onclick="populateDisplay('0')" id="zero">0</button>
+      <button onclick="populateDisplay('.')">.</button>
+      <button onclick="cackleLater()" class="equal">=</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

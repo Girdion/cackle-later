@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh; /* Ensures full viewport height */
+  width: 100vw; /* Ensures full viewport width */
+  margin: 0; /* Removes default browser margin */
+  background-color: rgb(53, 52, 52); /* Optional: to see centering better */
+}
+
+h1,
+p {
+  color: white;
+}
+
+.calculator {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 0.875rem; /* Adds some spacing */
+  border-radius: 6px; /* Optional: Makes edges rounded */
+}
+
+#display {
+  padding: 1.5rem;
+  background-color: grey;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.buttons {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+  background-color: rgba(255, 181, 43, 0.781);
+  border-radius: 5px;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgba(255, 181, 43, 0.9);
+}
+
+button:active {
+  background-color: rgba(255, 181, 43, 1);
+}
+
+#zero {
+  grid-column: span 2;
+}
