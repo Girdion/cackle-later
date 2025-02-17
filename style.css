@@ -20,12 +20,13 @@ p {
   flex-direction: column;
   padding: 0.875rem; /* Adds some spacing */
   border-radius: 6px; /* Optional: Makes edges rounded */
+  max-width: 400px;
 }
 
 #display {
   padding: 1.5rem;
   background-color: grey;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
@@ -53,4 +54,19 @@ button:active {
 
 #zero {
   grid-column: span 2;
+}
+
+@media (max-width: 600px) {
+  .calculator {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .buttons button {
+    padding: 0.8rem;
+  }
+
+  #display {
+    padding: 0.5rem;
+  }
 }
